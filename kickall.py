@@ -5,7 +5,7 @@ import subprocess
 import re
 import datetime
 
-with open('config') as config:
+with open('config.json') as config:
 
 child = subprocess.Popen(["ddos -b"],stdout=subprocess.PIPE, shell=True)
 msg,err = child.communicate()
